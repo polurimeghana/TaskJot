@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screen1"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/ms_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="99dp"
+        android:gravity="center"
+        android:text="MAKE YOUR CHOICE"
+        android:textSize="25dp"
+        android:textColor="@color/DeepSkyBlue"
+        android:textStyle="bold" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/ms_btn1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ms_title"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="58dp"
+        android:backgroundTint="@color/DeepSkyBlue"
+        android:text="TO DO LIST"
+        android:textColor="@color/white" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/ms_btn2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ms_btn1"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="107dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="@color/DeepSkyBlue"
+        android:text="STICKY NOTES"
+        android:textColor="@color/white" />
+
+    <ImageView
+        android:id="@+id/ms_image"
+        android:layout_width="250dp"
+        android:layout_height="550dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginRight="26dp"
+        android:layout_marginBottom="-73dp"
+        android:src="@drawable/logo" />
+
+
+</RelativeLayout>

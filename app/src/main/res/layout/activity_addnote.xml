@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".addnote"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@color/DeepSkyBlue">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/titletextview"
+        android:text="Add New Note"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:textStyle="bold"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_corner"
+        android:layout_margin="10dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:id="@+id/titleinput"
+            android:hint="Title"
+            android:background="#3000BFFF"
+            android:padding="10dp"
+            android:layout_margin="10dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/descriptioninput"
+            android:hint="Description"
+            android:background="#3000BFFF"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:gravity="top"
+            android:lines="10"/>
+    </LinearLayout>
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SAVE NOTE"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/DeepSkyBlue"
+        android:id="@+id/savebtn"
+        android:textStyle="bold"
+        android:textSize="15sp"/>
+
+</LinearLayout>
